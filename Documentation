@@ -1,0 +1,78 @@
+=======================================
+LIBRARY BOOK BORROWING SYSTEM - DOCUMENTATION
+=======================================
+
+1.  PROGRAM OVERVIEW
+--------------------
+This is a simple command-line application for managing library books and their borrowing status. It allows users to add, update, remove, borrow, and return books, as well as view different lists of books.
+
+2.  FILES IN THE PROJECT
+------------------------
++-------------------+---------------------------------------------------------------+
+| File Name         | Description                                                   |
++-------------------+---------------------------------------------------------------+
+| main.py           | Main application entry point. Handles user menu               |
+|                   | and interaction.                                              |
++-------------------+---------------------------------------------------------------+
+| book_manager.py   | Contains functions for managing book details                  |
+|                   | (add, update, remove, display).                               |
++-------------------+---------------------------------------------------------------+
+| borrow_manager.py | Contains functions for handling book borrowing                |
+|                   | and returning.                                                |
++-------------------+---------------------------------------------------------------+
+| file_storage.py   | Manages saving and loading library data to/from               |
+|                   | 'library_data.json'.                                          |
++-------------------+---------------------------------------------------------------+
+| test_runner.py    | Interactive script for running specific test scenarios        |
+|                   | and inspecting data.                                          |
++-------------------+---------------------------------------------------------------+
+| documentation.txt | This file.                                                    |
++-------------------+---------------------------------------------------------------+
+
+
+3.  HOW TO RUN THE PROGRAM
+--------------------------
+
+3.1. Main Application:
+    To start the main library system:
+    Open your terminal or command prompt.
+    Navigate to the directory where the files are saved.
+    Run:
+    python main.py
+
+3.2. Test Runner:
+    To run specific test scenarios and inspect data:
+    Open your terminal or command prompt.
+    Navigate to the directory where the files are saved.
+    Run:
+    python test_runner.py
+    Follow the on-screen menu to select tests or reset data.
+
+4.  DATA STORAGE
+----------------
+The program uses a JSON file named 'library_data.json' to store all book information and borrowed book records.
+When you run the 'test_runner.py', it uses a separate file named 'test_library_data.json' to avoid interfering with your main application's data.
+
+5.  KEY FEATURES
+----------------
+-   Add New Books: Add books with ID, title, author, and category.
+-   Display Books: View all books, only available books, or only borrowed books.
+-   Search Books: Find books by category.
+-   Borrow Books: Mark a book as borrowed by a member.
+-   Return Books: Mark a borrowed book as returned.
+-   Update Books: Modify details of existing books.
+-   Remove Books: Delete books from the library (if not borrowed).
+-   Save/Load Data: Automatically saves data on certain actions and exit.
+
+6.  TEST CASES (Provided in test_runner.py)
+-------------------------------------------
+The 'test_runner.py' includes the following scenarios:
+-   Add Book Scenario: Tests adding a new book.
+-   Borrow and Return Scenario: Tests borrowing a book and then returning it.
+-   Update and Remove Scenario: Tests updating a book's details and then removing it.
+
+Each test shows the state of the data before and after the operation, and allows you to pause and inspect the 'test_library_data.json' file.
+
+=======================================
+END OF DOCUMENTATION
+=======================================
